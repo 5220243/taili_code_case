@@ -1,0 +1,8 @@
+example\0326-0-0.jpg 2
+example\0326-0-1.jpg 1
+example\0326-0-2.jpg 2
+example\0326-0-3.jpg 3
+example\0326-0-4.jpg 4
+example\0326-0-5.jpg 5
+example\0326-0-6.jpg 6
+example\0326-0-7.jpg 0
