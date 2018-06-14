@@ -7,7 +7,7 @@ import numpy as np
 
 imgname="taili"
 image = img_as_float(io.imread(imgname+".png"))
-print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')+"Start.")
+print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')+" Start.")
 
 for numSegments in [2000]:#700,900,1000,1100,1200,
     for cp in [5]:#3,4,
