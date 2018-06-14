@@ -7,8 +7,8 @@ from CNN_input import read_dataset
 logging.basicConfig(format='%(levelname)s:%(asctime)s %(message)s', level=logging.INFO, datefmt='%Y-%m-%d %H:%M:%S')
 
 DATASET_DIR = r'C:\Users\PycharmProjects\Cifar'
-N_FEATURES = 3072
-N_CLASSES = 7
+N_FEATURES = 3072 # 3072 = 32*32*3
+N_CLASSES = 7 # Number of Classes
 N_FC1 = 512
 N_FC2 = 256
 BATCH_SIZE = 128
@@ -150,7 +150,7 @@ def cifar10_model(learning_rate, batch_size):
 
 
 def main():
-    for lr in [1e-2]:#, 1e-3, 1e-4]:
+    for lr in [1e-2]:#, 1e-3, 1e-4]: # Save some results with different learning rate(lr) and batch size(bs)
         for bs in [64]:#, 128]:
             logging.info('learing rate = {:.0E}, batch size = {}'.format(lr, bs))
             cifar10_model(lr, bs)
