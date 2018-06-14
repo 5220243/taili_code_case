@@ -9,8 +9,8 @@ imgname="taili"
 image = img_as_float(io.imread(imgname+".png"))
 print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')+" Start.")
 
-for numSegments in [2000]:#700,900,1000,1100,1200,
-    for cp in [5]:#3,4,
+for numSegments in [8000]:#1000,2000,3000,4000,5000,6000,7000,9000,10000
+    for cp in [5]:#3,4,6,2
         for sig in [6]:#2,4,6,
             segments = slic(image, n_segments = numSegments, sigma = sig,compactness=cp)
 
