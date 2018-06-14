@@ -5,11 +5,11 @@ import tensorflow as tf
 
 import _pickle as pickle
 
-TRAIN_FILE = ['800']
+TRAIN_FILE = ['800'] # File of pickled picture
 
 IMAGESIZE=int(32)
 
-EVAL_FILE = ['yz']
+EVAL_FILE = ['yz'] # File of pickled eval picture
 
 
 def unpickle(filename):
